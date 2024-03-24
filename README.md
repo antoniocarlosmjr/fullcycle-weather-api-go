@@ -16,4 +16,4 @@ This API is developed in Golang as a form of assessment for full cycle postgradu
 
 ## How to run the API remotely
 
-1) Access url `` create in Cloud Run.
+1) Access url `https://weather-api-go-jggvvzwp2q-uc.a.run.app/api/v1/weather?cep={your_cep}` for execute the API. This service is will be availble until 24 June 2024.
