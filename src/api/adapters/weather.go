@@ -3,10 +3,10 @@ package adapters
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/antoniocarlosmjr/weather-api-go/src/api/errors"
 	"io/ioutil"
 	"net/http"
 
+	"github.com/antoniocarlosmjr/weather-api-go/src/api/errors"
 	"github.com/antoniocarlosmjr/weather-api-go/src/api/models/entities"
 )
 

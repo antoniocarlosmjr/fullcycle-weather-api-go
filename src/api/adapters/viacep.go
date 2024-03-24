@@ -13,6 +13,7 @@ func SearchZipCode(zipCode string) (*entities.ZipCode, error) {
 	if err != nil {
 		return nil, err
 	}
+
 	defer resp.Body.Close()
 
 	body, error := ioutil.ReadAll(resp.Body)
