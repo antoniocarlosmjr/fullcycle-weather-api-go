@@ -16,4 +16,4 @@ This API is developed in Golang as a form of assessment for full cycle postgradu
 
 ## How to run the API remotely
 
-1) Access url `https://openweathermap.org/api` create in Cloud Run.
+1) Access url `` create in Cloud Run.
