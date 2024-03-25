@@ -1,6 +1,8 @@
 package services
 
 import (
+	"net/url"
+
 	"github.com/antoniocarlosmjr/weather-api-go/src/api/adapters"
 	"github.com/antoniocarlosmjr/weather-api-go/src/api/errors"
 	"github.com/antoniocarlosmjr/weather-api-go/src/api/models/dto"
@@ -16,7 +18,8 @@ func SearchWeather(zipCode string) (*dto.WeatherResponse, error) {
 		return nil, errors.UnableToRetrieveZipCode
 	}
 
-	resWeather, err := adapters.GetWeather(resViaCep.Locale)
+	city := url.QueryEscape(resViaCep.Locale)
+	resWeather, err := adapters.GetWeather(city)
 	if err != nil {
 		return nil, errors.UnableToRetrieveWeather
 	}
