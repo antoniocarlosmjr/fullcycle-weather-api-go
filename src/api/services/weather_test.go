@@ -32,7 +32,7 @@ func TestSearchWeather(t *testing.T) {
 		{
 			name: "Test SearchWeather Not Found Zip Code",
 			args: args{
-				zipCode: "44444444",
+				zipCode: "49045707",
 			},
 			want:    nil,
 			wantErr: true,
